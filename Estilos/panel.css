@@ -1,0 +1,94 @@
+﻿* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.panel {
+    background: #fff;
+    border-radius: 15px;
+}
+
+    .panel h2 {
+        text-align: center;
+        font-size: 2em;
+        padding: 20px;
+        font-family: "Times New Roman";
+    }
+
+    .panel ul {
+        display: grid;
+        list-style: none;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+
+        .panel ul li {
+            border-top: 5px ridge #555;
+            border-bottom: 5px double #555;
+            border-radius: 15px;
+        }
+
+        .panel ul .ultima {
+            border-top: 5px ridge #555;
+            border-bottom: 5px ridge #555;
+            border-radius: 15px;
+        }
+        /* .panel ul li a{
+    text-decoration: none;
+    display: block;
+    font-size: 1.5em;
+    color: #000;
+    text-align: center;
+    border-radius: 15px;
+    background: rgb(101, 199, 255);
+    padding: 30px;
+    margin: 20px 20px 20px 20px;
+    box-shadow: 2px 4px 1px #333;
+}
+
+.panel ul li a:hover{
+    background: #0e60f8;
+    color: #fff;
+    box-shadow: 6px 8px 3px #000;
+    text-shadow: 1px 1px 1px #000;
+} */
+
+        /* .panel ul li a{
+    text-decoration: none;
+    display: block;
+    font-size: 1.5em;
+    color: #444;
+    text-align: center;
+    border-radius: 15px;
+    background: rgb(227, 191, 252);
+    padding: 30px;
+    margin: 20px 20px 20px 20px;
+    box-shadow: 2px 4px 1px #333;
+}
+
+.panel ul li a:hover{
+    background: rgb(166, 115, 202);
+    color: #fff;
+    box-shadow: 6px 8px 3px #000;
+    text-shadow: 1px 1px 1px #000;
+} */
+
+        .panel ul li a {
+            text-decoration: none;
+            display: block;
+            font-size: 1.5em;
+            color: #000;
+            text-align: center;
+            border-radius: 15px;
+            background: #ffa75f;
+            padding: 30px;
+            margin: 20px 20px 20px 20px;
+            box-shadow: 2px 4px 1px #333;
+        }
+
+            .panel ul li a:hover {
+                background: #e7761a;
+                color: #fff;
+                box-shadow: 6px 8px 3px #000;
+                text-shadow: 1px 1px 1px #000;
+            }

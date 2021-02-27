@@ -1,0 +1,35 @@
+﻿* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.clientes {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+    .clientes h2 {
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+    .clientes .btn {
+        display: flex;
+        justify-content: space-around;
+    }
+
+        .clientes .btn a {
+            padding: 1.2em 1.5em;
+            background: #186ecf;
+            border-radius: 8px;
+            width: 25%;
+            color: #fff;
+            text-decoration: none;
+            width: 10em;
+            text-align: center;
+        }
+
+        .clientes .btn .btnNuevoCliente {
+            background: #e72f2f;
+        }
