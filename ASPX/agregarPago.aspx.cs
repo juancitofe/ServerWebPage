@@ -13,10 +13,10 @@ namespace JuanFer_Servers.ASPX
         string conexion = "server = DESKTOP-NFK8QSO\\SQLEXPRESS; database = netfreePage ; Integrated Security = True";
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["tipoUser"] == null)
+            /*if (Session["tipoUser"] == null)
             {
                 Response.Redirect("Inicio.aspx");
-            }
+            }*/
         }
 
         protected void txtBuscar_TextChanged(object sender, EventArgs e)
@@ -54,7 +54,7 @@ namespace JuanFer_Servers.ASPX
 
         protected void listClientes_SelectedIndexChanged(object sender, EventArgs e)
         {
-            SqlConnection conx = new SqlConnection(conexion);
+            /*SqlConnection conx = new SqlConnection(conexion);
             conx.Open();
             string query = "SELECT FORMAT(uVencimiento, 'dd/mm/yyyy') from Cliente";
             SqlCommand cmd = new SqlCommand(query, conx);
@@ -64,7 +64,24 @@ namespace JuanFer_Servers.ASPX
             string uVenc = dr.GetValue(0).ToString();
             //txtNombre.Text = nombre;
             txtFecha.Text = uVenc;
-            conx.Close();
+            conx.Close();*/
+
+            string cliente = listClientes.SelectedValue;
+
+            int separador1 = cliente.IndexOf('|', 0);
+            int separador2 = cliente.IndexOf('|', separador1+1);
+            int separador3 = cliente.IndexOf('|', separador2+1);
+
+            string id = cliente.Substring(0, separador1-1).Trim();
+            string NyA = cliente.Substring(separador1+1, separador2-separador1-1).Trim();
+            string ciudad = cliente.Substring(separador2+1, separador3-separador2-1).Trim();
+            string uVenc = cliente.Substring(separador3+1).Trim();
+
+            Response.Write(cliente.Length.ToString() + ' ' +separador1 + ' ' + separador2 + ' ' + separador3);
+            Response.Write(' ' + id + ' ' + NyA + ' ' + ciudad + ' ' + uVenc);
+
+            txtNombre.Text = NyA;
+            txtFecha.Text = uVenc;
         }
     }
 }

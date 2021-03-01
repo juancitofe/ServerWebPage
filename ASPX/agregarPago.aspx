@@ -16,8 +16,8 @@
             <li>Promocion <br> <div class="cajaSelect"> <asp:DropDownList ID="dropPromo" runat="server" DataSourceID="SqlDropPromo" DataTextField="cod_prom" DataValueField="cod_prom"></asp:DropDownList>
                 <asp:SqlDataSource ID="SqlDropPromo" runat="server" ConnectionString="<%$ ConnectionStrings:netfreePageConnectionString %>" SelectCommand="SELECT [cod_prom] FROM [Promocion] ORDER BY [cod_prom] DESC"></asp:SqlDataSource>
                 </div></li>
-            <li>Fecha Inicio <br> <asp:TextBox ID="txtFecha" runat="server" ReadOnly="True"></asp:TextBox> <asp:Button ID="btnCalendar" class="btnCalendar" runat="server" Text="Elegir Fecha" OnClick="btnCalendar_Click" /> <br /> <asp:Calendar ID="calendarPago" CssClass="nodisplay" runat="server" OnSelectionChanged="calendarPago_SelectionChanged"></asp:Calendar></li>
             <li>Precio Final <br> <asp:TextBox ID="txtPrecioFinal" runat="server" ReadOnly="True"></asp:TextBox> </li>
+            <li>Fecha Inicio <br> <asp:TextBox ID="txtFecha" runat="server" ReadOnly="True"></asp:TextBox> <asp:Button ID="btnCalendar" class="btnCalendar" runat="server" Text="Elegir Fecha" OnClick="btnCalendar_Click" /> <br /> <asp:Calendar ID="calendarPago" CssClass="nodisplay" runat="server" OnSelectionChanged="calendarPago_SelectionChanged"></asp:Calendar></li>
             <li>Metodo de Pago <br> <div class="cajaSelect"><asp:DropDownList ID="dropPago" runat="server" DataSourceID="SqlDropPago" DataTextField="cod_pago" DataValueField="cod_pago"></asp:DropDownList>
                 <asp:SqlDataSource ID="SqlDropPago" runat="server" ConnectionString="<%$ ConnectionStrings:netfreePageConnectionString %>" SelectCommand="SELECT [cod_pago] FROM [Pago]"></asp:SqlDataSource></div>
             </li>

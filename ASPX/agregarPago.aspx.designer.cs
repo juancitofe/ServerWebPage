@@ -87,6 +87,15 @@ namespace JuanFer_Servers.ASPX
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDropPromo;
 
         /// <summary>
+        /// Control txtPrecioFinal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtPrecioFinal;
+
+        /// <summary>
         /// Control txtFecha.
         /// </summary>
         /// <remarks>
@@ -112,15 +121,6 @@ namespace JuanFer_Servers.ASPX
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Calendar calendarPago;
-
-        /// <summary>
-        /// Control txtPrecioFinal.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPrecioFinal;
 
         /// <summary>
         /// Control dropPago.
