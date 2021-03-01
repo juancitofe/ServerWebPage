@@ -25,6 +25,7 @@
 
             .perfil .contenedor .sct1 div img {
                 border-radius: 50%;
+                height: 150px;
                 /* border: #000 1px solid; */
             }
 

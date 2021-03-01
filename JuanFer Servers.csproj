@@ -67,17 +67,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ASPX\agregarServidor.aspx" />
-    <Content Include="ASPX\admin.aspx" />
-    <Content Include="ASPX\agregarCliente.aspx" />
-    <Content Include="ASPX\agregarPago.aspx" />
-    <Content Include="ASPX\Inicio.aspx" />
-    <Content Include="ASPX\listaPagos.aspx" />
-    <Content Include="ASPX\listaServidores.aspx" />
-    <Content Include="ASPX\login.aspx" />
-    <Content Include="ASPX\panel.aspx" />
-    <Content Include="ASPX\Perfil.aspx" />
-    <Content Include="ASPX\Tutoriales.aspx" />
+    <Content Include="aspx\agregarServidor.aspx" />
+    <Content Include="aspx\admin.aspx" />
+    <Content Include="aspx\agregarCliente.aspx" />
+    <Content Include="aspx\agregarPago.aspx" />
+    <Content Include="aspx\Inicio.aspx" />
+    <Content Include="aspx\listaPagos.aspx" />
+    <Content Include="aspx\listaServidores.aspx" />
+    <Content Include="aspx\login.aspx" />
+    <Content Include="aspx\panel.aspx" />
+    <Content Include="aspx\Perfil.aspx" />
+    <Content Include="aspx\Tutoriales.aspx" />
     <Content Include="Estilos\Clientes.css" />
     <Content Include="Estilos\funcionesPanel.css" />
     <Content Include="Estilos\inicio.css" />
@@ -87,95 +87,95 @@
     <Content Include="Estilos\perfil.css" />
     <Content Include="Global.asax" />
     <Content Include="JS\master.js" />
-    <Content Include="ASPX\listaClientes.aspx" />
+    <Content Include="aspx\listaClientes.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ASPX\agregarServidor.aspx.cs">
+    <Compile Include="aspx\agregarServidor.aspx.cs">
       <DependentUpon>agregarServidor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ASPX\agregarServidor.aspx.designer.cs">
+    <Compile Include="aspx\agregarServidor.aspx.designer.cs">
       <DependentUpon>agregarServidor.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ASPX\admin.aspx.cs">
+    <Compile Include="aspx\admin.aspx.cs">
       <DependentUpon>admin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ASPX\admin.aspx.designer.cs">
+    <Compile Include="aspx\admin.aspx.designer.cs">
       <DependentUpon>admin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ASPX\agregarCliente.aspx.cs">
+    <Compile Include="aspx\agregarCliente.aspx.cs">
       <DependentUpon>agregarCliente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ASPX\agregarCliente.aspx.designer.cs">
+    <Compile Include="aspx\agregarCliente.aspx.designer.cs">
       <DependentUpon>agregarCliente.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ASPX\agregarPago.aspx.cs">
+    <Compile Include="aspx\agregarPago.aspx.cs">
       <DependentUpon>agregarPago.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ASPX\agregarPago.aspx.designer.cs">
+    <Compile Include="aspx\agregarPago.aspx.designer.cs">
       <DependentUpon>agregarPago.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ASPX\Inicio.aspx.cs">
+    <Compile Include="aspx\Inicio.aspx.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ASPX\Inicio.aspx.designer.cs">
+    <Compile Include="aspx\Inicio.aspx.designer.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ASPX\listaPagos.aspx.cs">
+    <Compile Include="aspx\listaPagos.aspx.cs">
       <DependentUpon>listaPagos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ASPX\listaPagos.aspx.designer.cs">
+    <Compile Include="aspx\listaPagos.aspx.designer.cs">
       <DependentUpon>listaPagos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ASPX\listaServidores.aspx.cs">
+    <Compile Include="aspx\listaServidores.aspx.cs">
       <DependentUpon>listaServidores.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ASPX\listaServidores.aspx.designer.cs">
+    <Compile Include="aspx\listaServidores.aspx.designer.cs">
       <DependentUpon>listaServidores.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ASPX\login.aspx.cs">
+    <Compile Include="aspx\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ASPX\login.aspx.designer.cs">
+    <Compile Include="aspx\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ASPX\panel.aspx.cs">
+    <Compile Include="aspx\panel.aspx.cs">
       <DependentUpon>panel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ASPX\panel.aspx.designer.cs">
+    <Compile Include="aspx\panel.aspx.designer.cs">
       <DependentUpon>panel.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ASPX\Perfil.aspx.cs">
+    <Compile Include="aspx\Perfil.aspx.cs">
       <DependentUpon>Perfil.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ASPX\Perfil.aspx.designer.cs">
+    <Compile Include="aspx\Perfil.aspx.designer.cs">
       <DependentUpon>Perfil.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ASPX\Tutoriales.aspx.cs">
+    <Compile Include="aspx\Tutoriales.aspx.cs">
       <DependentUpon>Tutoriales.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ASPX\Tutoriales.aspx.designer.cs">
+    <Compile Include="aspx\Tutoriales.aspx.designer.cs">
       <DependentUpon>Tutoriales.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="ASPX\listaClientes.aspx.cs">
+    <Compile Include="aspx\listaClientes.aspx.cs">
       <DependentUpon>listaClientes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ASPX\listaClientes.aspx.designer.cs">
+    <Compile Include="aspx\listaClientes.aspx.designer.cs">
       <DependentUpon>listaClientes.aspx</DependentUpon>
     </Compile>
     <Compile Include="master.Master.cs">
