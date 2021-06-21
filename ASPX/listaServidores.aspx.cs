@@ -17,5 +17,12 @@ namespace JuanFer_Servers.ASPX
             }
             gridServidores.HeaderRow.TableSection = TableRowSection.TableHeader;
         }
+
+        protected void gridServidores_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            /*string indice = gridServidores.SelectedDataKey.Value.ToString();
+            Response.Write("Indice: " + indice);
+            // gridServidores.SelectedIndex.ToString();*/
+        }
     }
 }

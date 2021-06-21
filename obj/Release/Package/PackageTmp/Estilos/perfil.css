@@ -1,0 +1,76 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+}
+
+.perfil {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+    .perfil h2 {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .perfil .contenedor {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .perfil .contenedor .sct1 {
+            width: 30%;
+        }
+
+            .perfil .contenedor .sct1 div img {
+                border-radius: 50%;
+                height: 150px;
+                /* border: #000 1px solid; */
+            }
+
+            .perfil .contenedor .sct1 .btn {
+                border: none;
+            }
+
+            .perfil .contenedor .sct1 input[type="submit"] {
+                margin: 1em;
+                text-align: center;
+                padding: 0.5em;
+                width: 120px;
+            }
+
+
+        .perfil .contenedor .sct2 {
+            /* border: solid 1px #000; */
+            background: rgba(161, 195, 255, 0.7);
+            border-radius: 8px;
+            width: 75%;
+            padding: 1em;
+        }
+
+            .perfil .contenedor .sct2 h3 {
+                text-align: center;
+                font-size: 1.5em;
+            }
+
+            .perfil .contenedor .sct2 ul {
+                list-style: none;
+            }
+
+                .perfil .contenedor .sct2 ul li {
+                    margin: .5em;
+                    font-size: 1.3em;
+                    text-align: center;
+                }
+
+                    .perfil .contenedor .sct2 ul li input[type=text] {
+                        border: none;
+                        border-bottom: 1px solid #186ecf;
+                        background: transparent;
+                        outline: none;
+                        font-size: 1em;
+                        float: right;
+                        width: 12em;
+                        margin-right: 2em;
+                    }

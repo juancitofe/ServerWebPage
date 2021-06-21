@@ -1,0 +1,229 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+.fondo {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1em;
+}
+
+    .fondo h2 {
+        text-align: center;
+        font-size: 2em;
+        padding: .5em 0;
+    }
+
+    .fondo ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* background: #9be8ffd2; */
+        background: #ffaf54;
+        margin: 1em;
+        padding: 1em 0;
+        border-radius: 1em;
+    }
+
+        .fondo ul li {
+            padding: 1em;
+            font-size: 1.45em;
+        }
+
+            .fondo ul li .Texto {
+                display: inline;
+            }
+
+            .fondo ul li input[type=text], .fondo ul li input[type=password] {
+                border: none;
+                border-bottom: 1px solid #444;
+                background: transparent;
+                outline: none;
+                font-size: .9em;
+                float: right;
+            }
+
+            .fondo ul li .cajaSelect {
+                display: inline;
+                background: #fff;
+                border: 1px solid #666;
+                height: auto;
+                width: 63%;
+                /* float: right; */
+                margin-top: -.14em;
+            }
+
+            .fondo ul li select {
+                /* display: none; */
+                background: transparent;
+                border: none;
+                width: 100%;
+                font-size: .8em;
+                padding: .3em;
+            }
+
+    .fondo input[type=submit] {
+        display: block;
+        border: none;
+        border-radius: 1em;
+        box-shadow: 2px 4px 1px #333;
+        outline: none;
+        height: 3em;
+        background: #ffa75f;
+        color: #000;
+        font-size: 1.5em;
+        text-align: center;
+        width: 50%;
+        margin: auto;
+        font-weight: bold;
+    }
+
+        .fondo input[type=submit]:hover {
+            background: #e7761a;
+            color: #fff;
+            box-shadow: 6px 8px 3px #000;
+            text-shadow: 1px 1px 1px #000;
+        }
+
+    .fondo ul .SO {
+        grid-column: span 2;
+        margin-right: 12em;
+    }
+
+    .fondo table {
+        margin: auto;
+        width: 100%;
+        border: none;
+    }
+
+        .fondo table thead th {
+            text-align: center;
+            border: solid 1px #ffa75f;
+            color: #000;
+            background: #ffa75f;
+            border: solid 1px #fff;
+        }
+
+            .fondo table thead th:hover {
+                background: #e7761a;
+                border: solid 1px #ccc;
+            }
+
+        .fondo table tr {
+            border-bottom: 1.5px #c0c0c0 solid;
+        }
+
+            .fondo table tr:hover {
+                background: #ccccccb3;
+            }
+
+            .fondo table tr td {
+                text-align: center;
+                border: none;
+            }
+
+    .fondo .gridClientes tr td, .fondo .gridClientes th {
+        padding: 1em 2em;
+    }
+
+    .fondo .gridServidores tr td, .fondo .gridServidores th {
+        padding: .5em;
+    }
+
+.nodisplay {
+    display: none;
+}
+
+.fondo .busqueda {
+    display: block;
+    float: right;
+    margin-bottom: 1em;
+    padding: 1em;
+    font-size: 1em;
+}
+
+.fondo > select {
+    width: 70%;
+    display: block;
+    /* border: .1px #444 solid ; */
+    border: none;
+    font-size: 1em;
+    padding: 1em;
+}
+
+    .fondo > select option {
+        padding: .3em;
+    }
+
+        .fondo > select option:hover {
+            background: #ccc;
+        }
+
+        .fondo > select option:checked {
+            background: #000;
+            color: #000;
+            /* no cambia na ↑
+    padding: 1em;*/
+        }
+
+.fondo .ulPago {
+    padding: 0;
+}
+
+
+    .fondo .ulPago li input[type="text"] {
+        float: none;
+        margin-top: .4em;
+        text-align: center;
+        width: 60%;
+    }
+
+    .fondo .ulPago li .btnCalendar {
+        font-size: .5em;
+        float: right;
+        width: 10em;
+        display: inline;
+        background: #ccc;
+    }
+
+        .fondo .ulPago li .btnCalendar:hover {
+            background: #666;
+            box-shadow: 3px 5px 2px #000;
+        }
+
+    .fondo .ulPago li select {
+        margin-top: .3em;
+        width: 60%;
+    }
+
+    .fondo .ulPago li input[type="checkbox"] {
+        width: 1.4em;
+        height: 1.4em;
+        margin-left: 1em;
+    }
+
+.fondo .mensaje{
+    width: 90%;
+    text-align: center;
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: .5em;
+    font-weight: bold;
+}   
+    
+.fondo .confirmacion{
+    background: #3fd444;
+    color: #000;
+    border: #000 1px solid;
+}
+
+.fondo .error{
+    background: #fcc7c7;
+    border: 1px #a94442 solid;
+    color: #8f0e0c;
+}
+
+.block{
+    display: block;
+}

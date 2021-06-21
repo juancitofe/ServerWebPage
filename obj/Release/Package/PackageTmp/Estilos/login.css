@@ -1,0 +1,77 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+.login {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    padding: 40px 0;
+}
+
+    .login .contenedor {
+        width: 40%;
+        max-width: 600px;
+        margin: 0 auto;
+        border: solid 1px #186ecf;
+        border-radius: 8px;
+        padding: 40px;
+        box-shadow: 3px 3px 3px #186ecf;
+        background: #CAD1D5;
+        /* background: #fff; */
+    }
+
+        .login .contenedor h2 {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .login .contenedor label {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .login .contenedor input {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        .login .contenedor .escribe {
+            border: none;
+            border-bottom: 1px solid #186ecf;
+            background: transparent;
+            outline: none;
+            margin-top: -1.2em;
+            margin-bottom: 1em;
+            height: 3em;
+            font-size: 1em;
+        }
+
+        .login .contenedor input[type="submit"] {
+            border: none;
+            outline: none;
+            height: 3em;
+            background: #186ecf;
+            color: rgba(255,255,255,0.7);
+            font-size: 1.3em;
+            text-align: center;
+        }
+
+            .login .contenedor input[type="submit"]:hover {
+                cursor: pointer;
+                color: #fff;
+                background: #338BED;
+                box-shadow: 0px 2px 1px #000;
+            }
+
+        .login .contenedor a {
+            text-align: center;
+            color: #000;
+            margin-bottom: -.6em;
+        }body {
+}

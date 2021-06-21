@@ -63,6 +63,15 @@
                 padding: .3em;
             }
 
+            .campoObligatorio{
+                font-size: 1rem;
+                margin: -1em 0;
+                padding: 1em 0;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                float: right;
+            }
+
     .fondo input[type=submit] {
         display: block;
         border: none;
@@ -202,3 +211,28 @@
         height: 1.4em;
         margin-left: 1em;
     }
+
+.fondo .mensaje{
+    width: 90%;
+    text-align: center;
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: .5em;
+    font-weight: bold;
+}   
+    
+.fondo .confirmacion{
+    background: #3fd444;
+    color: #000;
+    border: #000 1px solid;
+}
+
+.fondo .error{
+    background: #fcc7c7;
+    border: 1px #a94442 solid;
+    color: #8f0e0c;
+}
+
+.block{
+    display: block;
+}

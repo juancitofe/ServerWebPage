@@ -6,9 +6,9 @@
     <section class="fondo">
         <h2>Agregar nuevo Servidor</h2>
         <ul>
-            <li><div class="Texto">Codigo:</div>             <asp:TextBox ID="txtCodigo" runat="server"></asp:TextBox></li>
-            <li><div class="Texto">IP:</div>                 <asp:TextBox ID="txtIP" runat="server"></asp:TextBox></li>
-            <li><div class="Texto">Proveedor:</div>          <asp:TextBox ID="txtProveedor" runat="server"></asp:TextBox></li>
+            <li><div class="Texto">Codigo: (*)</div>             <asp:TextBox ID="txtCodigo" runat="server"></asp:TextBox></li>
+            <li><div class="Texto">IP: (*)</div>                 <asp:TextBox ID="txtIP" runat="server"></asp:TextBox></li>
+            <li><div class="Texto">Proveedor: (*)</div>          <asp:TextBox ID="txtProveedor" runat="server"></asp:TextBox></li>
             <li><div class="Texto">Precio:</div>             <asp:TextBox ID="txtPrecio" runat="server"></asp:TextBox></li>
             <li><div class="Texto">vCPU:</div>               <asp:TextBox ID="txtvCPU" runat="server"></asp:TextBox></li>
             <li><div class="Texto">RAM:</div>                <asp:TextBox ID="txtRAM" runat="server"></asp:TextBox></li>
@@ -26,7 +26,10 @@
                     <asp:ListItem>Debian 10</asp:ListItem>
                 </asp:DropDownList>
             </div></li>
-        </ul>
+            <li class="campoObligatorio"><label class="campoObligatorio">(*) Campo Obligatorio</label></li>        
+        </ul>            
+        <asp:Label ID="lblError" CssClass="mensaje error nodisplay" runat="server" Text="Error"></asp:Label>
+        <asp:Label ID="lblConfirmacion" CssClass="mensaje confirmacion nodisplay" runat="server" Text="Servidor Agregado Correctamente"></asp:Label>
         <asp:Button ID="btnAgregar" runat="server" Text="Agregar" OnClick="btnAgregar_Click" />
     </section>
 </asp:Content>

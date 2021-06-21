@@ -11,6 +11,7 @@ namespace JuanFer_Servers
     public partial class agregarServidor : System.Web.UI.Page
     {
         string conexion = "server = DESKTOP-NFK8QSO\\SQLEXPRESS; database = netfreePage ; Integrated Security = True";
+        string msgError = "";
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -22,21 +23,46 @@ namespace JuanFer_Servers
 
         protected void btnAgregar_Click(object sender, EventArgs e)
         {
-            SqlConnection conx = new SqlConnection(conexion);
-            conx.Open();
-            string query = "insert into Servidores values ('" + txtCodigo.Text + "','" + txtIP.Text + "','" + txtProveedor.Text + "','" + txtPrecio.Text + "'," + (txtvCPU.Text) + "," + txtRAM.Text + ",'" + txtTransferencia.Text + "','" + txtBandwith.Text + "','" + dropSO.SelectedValue + "')";
-            SqlCommand cmd = new SqlCommand(query, conx);
-            cmd.ExecuteNonQuery();
+            if (txtCodigo.Text == "")
+            {
+                msgError += "Ingrese un Codigo para el Servidor<br>";
+            }
 
-            txtCodigo.Text = "";
-            txtIP.Text = "";
-            txtProveedor.Text = "";
-            txtPrecio.Text = "";
-            txtvCPU.Text = "";
-            txtRAM.Text = "";
-            txtTransferencia.Text = "";
-            txtBandwith.Text = "";
-            dropSO.ClearSelection();
+            if (txtIP.Text == "")
+            {
+                msgError += "Ingrese la IP del Servidor<br>";
+            }
+
+            if (txtProveedor.Text == "")
+            {
+                msgError += "Ingrese el Nombre del Proveedor<br>";
+            }
+
+            if (msgError!="")
+            {
+                lblError.Text = msgError;
+                lblError.CssClass = "mensaje error block";
+                lblConfirmacion.CssClass = "mensaje confirmacion nodisplay";
+            } else {
+                SqlConnection conx = new SqlConnection(conexion);
+                conx.Open();
+                string query = "insert into Servidores values ('" + txtCodigo.Text + "','" + txtIP.Text + "','" + txtProveedor.Text + "','" + txtPrecio.Text + "'," + (txtvCPU.Text) + "," + txtRAM.Text + ",'" + txtTransferencia.Text + "','" + txtBandwith.Text + "','" + dropSO.SelectedValue + "')";
+                SqlCommand cmd = new SqlCommand(query, conx);
+                cmd.ExecuteNonQuery();
+
+                txtCodigo.Text = "";
+                txtIP.Text = "";
+                txtProveedor.Text = "";
+                txtPrecio.Text = "";
+                txtvCPU.Text = "";
+                txtRAM.Text = "";
+                txtTransferencia.Text = "";
+                txtBandwith.Text = "";
+                dropSO.ClearSelection();
+
+                lblError.CssClass = "mensaje error nodisplay";
+                lblConfirmacion.CssClass = "mensaje confirmacion block";
+            }
         }
     }
 }

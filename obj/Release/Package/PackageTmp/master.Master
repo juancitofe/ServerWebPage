@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="JuanFer_Servers.master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Master</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Estilos/master.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="../JS/master.js"></script>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready( function () {
+            $('.grilla').DataTable();
+        } );
+    </script>
+    </head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div>
+                <img class="logo" src="../imagenes/logo.jpeg" width="100" alt="logo">
+            </div>
+            <nav>
+                <ul class="lista">
+                    <li><a href="Inicio.aspx">Inicio</a></li>
+                    <%-- <li><a href="Clientes.aspx">Clientes</a>
+                        <ul>
+                            <li><a href="nuevoCliente.aspx">Nuevo Cliente</a></li>
+                            <li><a href="listaCliente.aspx">Lista de Clientes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Pagos.aspx">Pagos</a>
+                        <ul>
+                            <li><a href="#">Nuevo Pago</a></li>
+                            <li><a href="#">Lista de Pagos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Servidores.aspx">Sevidores</a></li> --%>
+                    <li><a href="Tutoriales.aspx">Tutoriales</a></li>
+                    <li></li>
+                    <li class="acceder" id="liAcceder"><a id="acceder" href="login.aspx">Acceder</a></li>
+                </ul>
+            </nav>
+        </header>
+        <form class="contenido" id="form1" runat="server">
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+        <footer>
+            Powered By: Juan Fernández
+        </footer>
+    </div>
+</body>
+</html>
