@@ -14,6 +14,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section class="fondo">
         <h2>Lista de Servidores</h2>
+        <asp:Label ID="lblMensaje" CssClass="nodisplay" runat="server"></asp:Label>
         <asp:GridView ID="gridServidores" class="gridServidores grilla" runat="server" AutoGenerateColumns="False" DataKeyNames="Codigo" DataSourceID="sqlGridServidores" OnSelectedIndexChanged="gridServidores_SelectedIndexChanged">
             <Columns>
                 <asp:CommandField ShowSelectButton="True" />

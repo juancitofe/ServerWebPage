@@ -7,6 +7,7 @@
     background: #fff;
     border-radius: 8px;
     padding: 1em;
+    overflow: hidden;
 }
 
     .fondo h2 {
@@ -72,7 +73,7 @@
                 float: right;
             }
 
-    .fondo input[type=submit] {
+    .fondo > input[type=submit] {
         display: block;
         border: none;
         border-radius: 1em;
@@ -86,9 +87,10 @@
         width: 50%;
         margin: auto;
         font-weight: bold;
+        cursor: pointer;
     }
 
-        .fondo input[type=submit]:hover {
+        .fondo > input[type=submit]:hover {
             background: #e7761a;
             color: #fff;
             box-shadow: 6px 8px 3px #000;
@@ -235,4 +237,57 @@
 
 .block{
     display: block;
+}
+
+.fondo .CRUD .btn{
+    padding: .5em;
+    display: inline-block;
+    border: 1px #000 solid;
+    border-radius: .5em;
+    font-size: 1em;
+    text-align: center;
+    width: 12%;
+    font-weight: bold;
+    margin: 0 1em;
+    box-shadow: 2px 3px 2px #000;
+    cursor: pointer;
+}
+
+.fondo .CRUD .btn:hover{
+    box-shadow: 4px 6px 4px #000;
+}
+
+
+.fondo .CRUD .btnBorrar{
+    background-color: rgb(139, 18, 18);
+    color: #fff;    
+    float: right;
+}
+
+.fondo .CRUD .btnBorrar:hover{    
+    background-color: rgb(185, 24, 24);
+}
+
+.fondo .CRUD .btnEditar{
+    color: #ffa75f;
+    background: #111;
+    float: right;
+    box-shadow: 2px 3px 2px #777;
+}
+
+.fondo .CRUD .btnEditar:hover{     
+    background: #000;   
+    color: #fd8e33;
+    box-shadow: 4px 6px 4px #777;
+}
+
+.fondo .CRUD .btnVolver{
+    border: 1px solid #000;
+    text-decoration: none;
+    color: #000;
+    float: left;
+}
+
+.fondo .CRUD .btnVolver:hover{
+    background: #eee;    
 }

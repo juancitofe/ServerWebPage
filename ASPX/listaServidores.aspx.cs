@@ -16,13 +16,29 @@ namespace JuanFer_Servers.ASPX
                 Response.Redirect("Inicio.aspx");
             }
             gridServidores.HeaderRow.TableSection = TableRowSection.TableHeader;
+
+            if (Session["Borrado"] != null)
+            {
+                lblMensaje.Text = "Servidor " + Session["Borrado"] + " eliminado correctamente";                
+                lblMensaje.CssClass = "mensaje confirmacion block";                
+                Session.Remove("Borrado");
+            }   
+            else lblMensaje.CssClass = "nodisplay";
+
+            if (Session["Inexistente"] != null)
+            {
+                lblMensaje.Text = "No existe el servidor " + Session["Inexistente"];                
+                lblMensaje.CssClass = "mensaje error block";                
+                Session.Remove("Inexistente");
+            }
+            else lblMensaje.CssClass = "nodisplay";
         }
 
         protected void gridServidores_SelectedIndexChanged(object sender, EventArgs e)
         {
-            /*string indice = gridServidores.SelectedDataKey.Value.ToString();
-            Response.Write("Indice: " + indice);
-            // gridServidores.SelectedIndex.ToString();*/
+            string codigo = gridServidores.SelectedDataKey.Value.ToString();
+            Response.Write("Codigo: " + codigo);
+            Response.Redirect("servidor.aspx?cod=" + codigo);
         }
     }
 }

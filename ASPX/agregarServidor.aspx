@@ -5,6 +5,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section class="fondo">
         <h2>Agregar nuevo Servidor</h2>
+        <asp:Label ID="lblError" CssClass="mensaje error nodisplay" runat="server" Text="Error"></asp:Label>
+        <asp:Label ID="lblConfirmacion" CssClass="mensaje confirmacion nodisplay" runat="server" Text="Servidor Agregado Correctamente"></asp:Label>
         <ul>
             <li><div class="Texto">Codigo: (*)</div>             <asp:TextBox ID="txtCodigo" runat="server"></asp:TextBox></li>
             <li><div class="Texto">IP: (*)</div>                 <asp:TextBox ID="txtIP" runat="server"></asp:TextBox></li>
@@ -27,9 +29,7 @@
                 </asp:DropDownList>
             </div></li>
             <li class="campoObligatorio"><label class="campoObligatorio">(*) Campo Obligatorio</label></li>        
-        </ul>            
-        <asp:Label ID="lblError" CssClass="mensaje error nodisplay" runat="server" Text="Error"></asp:Label>
-        <asp:Label ID="lblConfirmacion" CssClass="mensaje confirmacion nodisplay" runat="server" Text="Servidor Agregado Correctamente"></asp:Label>
+        </ul>                    
         <asp:Button ID="btnAgregar" runat="server" Text="Agregar" OnClick="btnAgregar_Click" />
     </section>
 </asp:Content>

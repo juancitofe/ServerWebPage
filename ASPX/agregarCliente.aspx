@@ -5,6 +5,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section class="fondo">
         <h2>Agregar nuevo Cliente</h2>
+        <asp:Label ID="lblError" CssClass="mensaje error nodisplay" runat="server" Text="Error"></asp:Label>
+        <asp:Label ID="lblConfirmacion" CssClass="mensaje confirmacion nodisplay" runat="server" Text="Cliente Agregado Correctamente"></asp:Label>
         <ul>
             <li>Nombre: (*)     <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox></li>
             <li>Apellido: (*)   <asp:TextBox ID="txtApellido" runat="server"></asp:TextBox></li>
@@ -19,8 +21,6 @@
             <li>Contraseña: <asp:TextBox ID="txtPass" type="password" runat="server"></asp:TextBox></li>
             <li class="campoObligatorio"><label class="campoObligatorio">(*) Campo Obligatorio</label></li>
         </ul>
-        <asp:Label ID="lblError" CssClass="mensaje error nodisplay" runat="server" Text="Error"></asp:Label>
-        <asp:Label ID="lblConfirmacion" CssClass="mensaje confirmacion nodisplay" runat="server" Text="Cliente Agregado Correctamente"></asp:Label>
         <asp:Button ID="btnAgregar" runat="server" Text="Agregar" OnClick="btnAgregar_Click" />
     </section>
 </asp:Content>

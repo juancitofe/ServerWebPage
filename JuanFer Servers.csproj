@@ -71,6 +71,7 @@
     <Content Include="aspx\admin.aspx" />
     <Content Include="aspx\agregarCliente.aspx" />
     <Content Include="aspx\agregarPago.aspx" />
+    <Content Include="aspx\servidor.aspx" />
     <Content Include="aspx\Inicio.aspx" />
     <Content Include="aspx\listaPagos.aspx" />
     <Content Include="aspx\listaServidores.aspx" />
@@ -79,6 +80,7 @@
     <Content Include="aspx\Perfil.aspx" />
     <Content Include="aspx\Tutoriales.aspx" />
     <Content Include="Estilos\Clientes.css" />
+    <Content Include="Estilos\edit.css" />
     <Content Include="Estilos\funcionesPanel.css" />
     <Content Include="Estilos\inicio.css" />
     <Content Include="Estilos\login.css" />
@@ -118,6 +120,13 @@
     </Compile>
     <Compile Include="aspx\agregarPago.aspx.designer.cs">
       <DependentUpon>agregarPago.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspx\servidor.aspx.cs">
+      <DependentUpon>servidor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspx\servidor.aspx.designer.cs">
+      <DependentUpon>servidor.aspx</DependentUpon>
     </Compile>
     <Compile Include="aspx\Inicio.aspx.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>

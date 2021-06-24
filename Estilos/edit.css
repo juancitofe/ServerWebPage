@@ -1,0 +1,17 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+.fondo {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1em;
+}
+
+.fondo h2 {
+    text-align: center;
+    font-size: 2em;
+    padding: .5em 0;
+}
+

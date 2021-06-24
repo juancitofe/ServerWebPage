@@ -44,9 +44,11 @@ namespace JuanFer_Servers
                 lblError.CssClass = "mensaje error block";
                 lblConfirmacion.CssClass = "mensaje confirmacion nodisplay";
             } else {
+                string vCPU = txtvCPU.Text != "" ? txtvCPU.Text : (string)"null";
+                string RAM = txtRAM.Text != "" ? txtRAM.Text : (string)"null";
                 SqlConnection conx = new SqlConnection(conexion);
                 conx.Open();
-                string query = "insert into Servidores values ('" + txtCodigo.Text + "','" + txtIP.Text + "','" + txtProveedor.Text + "','" + txtPrecio.Text + "'," + (txtvCPU.Text) + "," + txtRAM.Text + ",'" + txtTransferencia.Text + "','" + txtBandwith.Text + "','" + dropSO.SelectedValue + "')";
+                string query = "insert into Servidores values ('" + txtCodigo.Text + "','" + txtIP.Text + "','" + txtProveedor.Text + "','" + txtPrecio.Text + "'," + vCPU + "," + RAM + ",'" + txtTransferencia.Text + "','" + txtBandwith.Text + "','" + dropSO.SelectedValue + "')";
                 SqlCommand cmd = new SqlCommand(query, conx);
                 cmd.ExecuteNonQuery();
 
